@@ -42,7 +42,7 @@ const HeaderTopHome = () => {
               </button>
               <div className="uppersider__menu__row">
                 <NavLink to="/Payment" className="uppersider__menu__item">
-                  ОПЛАТА И ДОСТАВКА
+                  ОПЛАТА b ДОСТАВКА
                 </NavLink>
                 <NavLink to="/Return" className="uppersider__menu__item">
                   УСЛОВИЯ ВОЗВРАТА

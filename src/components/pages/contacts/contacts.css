@@ -1,0 +1,33 @@
+.contacts {
+    margin-bottom: 100px;
+}
+
+.contacts__title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+
+.contacts__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contacts__subtitle {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contacts__social__link {
+    margin-right: 15px;
+}
+
+.contacts__tel__link {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contacts__address {
+    max-width: 200px;
+}

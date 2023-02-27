@@ -1,0 +1,46 @@
+.footer {
+    padding: 40px 0 10px;
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 40px;
+    grid-gap: 0 47px;
+}
+
+.footer__userful__title,
+.footer__buyer__title,
+.footer__contacts__title,
+.footer__company__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.footer__userful__link,
+.footer__buyer__link,
+.footer__contacts__tel,
+.footer__contacts__link,
+.footer__company__link {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer__contacts__social {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.footer__contacts__social-link {
+    margin-right: 13px;
+}
+
+.footer__copy {
+    text-align: center;
+}
+
+.menu__button {
+    display: none;
+}

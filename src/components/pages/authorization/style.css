@@ -1,0 +1,133 @@
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(114 126 117 / 69%);
+    top: 0;
+    left: 0;
+    z-index: 567;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.popup__content {
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    background-color: #E5E5E5;
+}
+
+.close {
+    color: #6F83A4;
+    font-size: 29px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.popup__title {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.label__input {
+    max-width: 400px;
+    width: 100%;
+    padding: 16px 10px;
+    border: 1px solid #252525;
+    margin-bottom: 20px;
+    color: rgba(37, 37, 37, 0.5);
+    position: relative;
+}
+
+.password__btn {
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.password__btn__active.password__btn::after {
+    opacity: 0;
+}
+
+.password__btn::after {
+    content: '';
+    width: 23px;
+    height: 3px;
+    position: absolute;
+    top: 7px;
+    right: -2px;
+    background-color: #aea6a6;
+    transform: rotate(45deg);
+    transition: .3s all ease;
+    opacity: 1;
+}
+
+.auth__form__btn {
+    display: block;
+    padding: 16px 10px;
+    max-width: 400px;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #E0BEA2;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.password__forgot {
+    margin-right: 158px;
+}
+
+.form__input__auth {
+    max-width: 400px;
+    width: 100%;
+    padding: 16px 10px;
+    border: 1px solid #252525;
+    margin-bottom: 20px;
+    color: rgba(37, 37, 37, 0.5);
+}
+
+.popup__password {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.popup__text {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+    text-align: center;
+}

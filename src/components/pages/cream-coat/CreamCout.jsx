@@ -1,9 +1,8 @@
 import Footer from "../footer/Footer";
-import HeaderTop from "../headertop/HeaderTop";
 import BreadCrubms from "./bread-crumbs/BreadCrumbs";
 import ProductItem from "./product-item/ProductItem";
-import SectionWatched from "./section-watched/SectionWatched";
 import './cream-cout.css'
+import HeaderTop from "../header-nav/headertop/HeaderTop";
 
 const CreamCout = () => {
   return (
@@ -16,7 +15,6 @@ const CreamCout = () => {
             <ProductItem />
           </div>
         </div>
-        <SectionWatched />
       </main>
       <Footer />
     </div>

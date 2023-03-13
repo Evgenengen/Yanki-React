@@ -1,19 +1,18 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
 
-const CatalogList = () => {
+const CatalogList = ({catalogProduct}) => {
   const dispatch = useDispatch();
-  const state = useSelector((state) => state);
   const addLike = (id) => {
     dispatch({ type: "ADD_LIKE", payload: id });
   };
-  const listItem = state.products.products.map((item) => {
+  const listItem = catalogProduct.map((item) => {
     const cssClass = item.active ? "form__active form__like " : "form__like";
     return (
       <div className="form__item" key={item.id}>
         <div className="form__label__link">
-          <img className="form__label__img" src={item.img} alt="" />
+          <img className="form__label__img" src={item.img} alt="img" />
         </div>
         <button onClick={() => addLike(item.id)} className={cssClass}>
           <img className="form__like__img" src="images/like-3.svg" alt="Like" />

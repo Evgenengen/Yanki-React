@@ -1,18 +1,19 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 const BreadCrumbs = () => {
     return ( 
         <div className="breadcrumbs">
           <div className="container">
             <ul className="breadcrumbs__list">
               <li className="breadcrumbs__item">
-                <a className="breadcrumbs__item__link" href="#">
+                <NavLink to='/' className="breadcrumbs__item__link">
                   Главная
-                </a>
+                </NavLink>
               </li>
               <li className="breadcrumbs__item">
-                <a className="breadcrumbs__item__link" href="#">
+                <NavLink to='/Catalog' className="breadcrumbs__item__link">
                   Каталог
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

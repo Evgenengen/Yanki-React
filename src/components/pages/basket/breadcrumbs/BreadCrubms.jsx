@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const BreadCrubms = () => {
     return (  
@@ -6,14 +7,14 @@ const BreadCrubms = () => {
           <div className="container">
             <ul className="breadcrumbs__list">
               <li className="breadcrumbs__item">
-                <a className="breadcrumbs__item__link" href="#">
+                <NavLink to='/' className="breadcrumbs__item__link">
                   Главная
-                </a>
+                </NavLink>
               </li>
               <li className="breadcrumbs__item">
-                <a className="breadcrumbs__item__link" href="#">
+                <div className="breadcrumbs__item__link">
                   Корзина
-                </a>
+                </div>
               </li>
             </ul>
           </div>

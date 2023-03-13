@@ -91,11 +91,19 @@
     align-items: center;
 }
 
+.basket__item__counter{
+    display: flex;
+    margin-right: 9px ;
+}
+
+.price__basket{
+    margin-right: 9px ;
+}
+
 .basket__item__price div {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    margin-right: 31px;
 }
 
 .basket__cart__img {

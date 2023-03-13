@@ -180,12 +180,7 @@ let initStateList = {
 const updateProducts = (products, item, idx) => {
   return [...products.slice(0, idx), item, ...products.slice(idx + 1)];
 };
-let result;
-function sortProducts(arr, prop) {
-  result = arr.sort(function (a, b) {
-    return a[prop] - b[prop];
-  });
-}
+
 export const productsReducer = (state = initStateList, action) => {
   switch (action.type) {
     case "ADD_LIKE":
@@ -275,7 +270,6 @@ export const productsReducer = (state = initStateList, action) => {
         ({ title }) => title === couneDec
       );
       const countDecItem = state.products[countDecIndex];
-
       let newCountDec;
       if (countDecItem) {
         newCountDec = {
@@ -312,39 +306,7 @@ export const productsReducer = (state = initStateList, action) => {
           ...state.products.slice(countIncIndex + 1),
         ],
       };
-    case "SORT_DEFAULT":
-      sortProducts(state.products, "id");
-      return {
-        ...state,
-        products: result,
-      };
-    case "SORT_RATING":
-      sortProducts(state.products, "rating");
-      return {
-        ...state,
-        products: result,
-      };
-    case "SORT_PRICE_DEC":
-      sortProducts(state.products, "price");
-      return {
-        ...state,
-        products: result,
-      };
-    case "SORT_PRICE_INC":
-      result = state.products.sort(function (a, b) {
-        return b.price - a.price;
-      });
-      return {
-        ...state,
-        products: result,
-      };
-    case "SEARCH_PANEL":
-      const catalogList = action.payload;
-      console.log(catalogList);
-      return {
-        ...state,
-        products: catalogList,
-      };
+
     default:
       return state;
   }

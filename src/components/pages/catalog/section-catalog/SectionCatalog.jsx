@@ -3,7 +3,7 @@ import CatalogList from "../catalog-list/catalogList";
 import ListProducts from "./list-products/ListProducts";
 import SortCatalog from "./sort-catalog/SortCatalog";
 
-const SectionCatalog = () => {
+const SectionCatalog = ({ catalogProduct, setFilter }) => {
   return (
     <section className="catalog">
       <div className="container">
@@ -14,9 +14,9 @@ const SectionCatalog = () => {
           </div>
           <div className="catalog__product">
             <div className="catalog__filter">
-              <SortCatalog />
+              <SortCatalog setFilter={setFilter} />
             </div>
-            <CatalogList />
+            <CatalogList catalogProduct={catalogProduct} />
           </div>
         </div>
       </div>

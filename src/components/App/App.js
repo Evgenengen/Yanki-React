@@ -9,8 +9,8 @@ import Return from "../pages/return/Return";
 import Home from "../pages/home/Home";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './media.css'
 import "./App.css";
+import './media.css'
 import Login from "../pages/authorization/login";
 import Register from "../pages/authorization/register";
 import RegisterFinish from "../pages/authorization/register-finish";

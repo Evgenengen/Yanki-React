@@ -113,7 +113,6 @@ color: #e0dfdf;
     margin-bottom: 30px;
 }
 
-
 .catalog__features-links {
     color: rgb(255, 251, 251);
     margin-bottom: 5px;
@@ -125,6 +124,7 @@ color: #e0dfdf;
     padding: 5px;
 
 }
+
 .catalog__features__links{
     font-size: 18px;
 }
@@ -153,7 +153,9 @@ color: #e0dfdf;
     width: 100%;
 }
 
-
+.backet__top__sum{
+    text-align: end;
+}
 
 .catalog__features__link::after {
     content: "";
@@ -214,8 +216,6 @@ color: #e0dfdf;
     width: 100%;
 }
 
-
-
 .form__like::after {
     content: "";
     position: absolute;
@@ -230,7 +230,6 @@ color: #e0dfdf;
 .form__active.form__like::after {
     background-color: red;
 }
-
 
 .form__like {
     position: absolute;

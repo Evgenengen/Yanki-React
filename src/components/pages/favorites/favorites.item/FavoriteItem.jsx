@@ -2,10 +2,10 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const FavoriteItem = () => {
+  const dispatch = useDispatch();
   const products = useSelector((state) =>
     state.products.products.filter((item) => item.active === true)
   );
-  const dispatch = useDispatch();
   const deleteProduct = (id) => {
     dispatch({ type: "DELETE_PRODUCT_FAVORITES", payload: id });
   };
@@ -22,10 +22,7 @@ const FavoriteItem = () => {
           <img className="form__like__img" src="images/like-3.svg" alt="Like" />
         </button>
         <div className="form__label__title">
-          <a className="form__label__title__link" href="cream-coat.html">
-            {" "}
-            {item.title}
-          </a>
+          <div className="form__label__title__link">{item.title}</div>
         </div>
         <p className="form__label__sum">{item.sum}</p>
         <div className="form__label__size">

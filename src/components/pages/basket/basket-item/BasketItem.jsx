@@ -1,5 +1,8 @@
 import React from "react";
-const BasketItem = ({ dispatch, products }) => {
+import { useDispatch } from "react-redux";
+
+const BasketItem = ({ products }) => {
+  const dispatch = useDispatch()
   const itemList = products.map((item) => {
     const deleteProductBasket = (title) => {
       dispatch({ type: "DELETE_PRODUCT_BASKET", payload: { title } });
@@ -14,7 +17,11 @@ const BasketItem = ({ dispatch, products }) => {
       <div key={item.id} className="basket__item">
         <div className="basket__item__content">
           <div className="basket__item__img">
-            <img className="basket__img" src="images/basket-1.jpg" alt="Cream" />
+            <img
+              className="basket__img"
+              src="images/basket-1.jpg"
+              alt="Cream"
+            />
           </div>
           <div className="basket__item__title">
             <span>арт. 1589956</span>
@@ -41,8 +48,9 @@ const BasketItem = ({ dispatch, products }) => {
           </div>
         </div>
         <div className="basket__item__price">
-          <div>
-            <div className="price__basket"> {item.count * item.price}</div> грн
+          <div className="basket__item__counter">
+            <div className="price__basket"> {item.count * item.price}</div>
+            <div>грн</div> 
           </div>
           <img
             onClick={() => deleteProductBasket(item.title)}

@@ -1,14 +1,25 @@
 const auth = {
-  login: '343@mail.ru',
-  password: 1234,
-};
+  user: {
+    login: null,
+    password: null,
+  },
+}
 
- export const userReducer = (state = auth, action) => {
+export const userReducer = (state = auth, action) => {
   switch (action.type) {
-    case 'ADD_AUTH':
-      console.log(action.payload)
-      return state
-    default: return state
+    case "ADD_AUTH":
+      const login = action.payload.login;
+      const password = action.payload.password;
+      console.log(state);
+      return {
+        ...state,
+        user: {
+
+          login,
+          password,
+        }
+      };
+    default:
+      return state;
   }
 };
-

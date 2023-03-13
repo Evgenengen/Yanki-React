@@ -1,4 +1,8 @@
 @media (max-width: 1200px) {
+    .menu__list {
+        margin-left: 20px;
+    }
+    
     .form__items {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -61,6 +65,10 @@
 }
 
 @media (max-width: 950px) {
+    .categories__items{
+        flex-wrap: wrap;
+    }
+
     .payment__info__list {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
@@ -78,7 +86,12 @@
 }
 
 @media (max-width: 900px) {
+    .header__actived__item:nth-child(1) {
+        display: none;
+    }
+
     .menu__list {
+        padding-left: 10px;
         margin-left: 20px;
     }
 
@@ -182,17 +195,34 @@
 }
 
 @media (max-width: 800px) {
-    .header__actived__item:nth-child(1) {
-        display: none;
+    .product__item {
+        flex-wrap: wrap;
+        margin-bottom: 0;
     }
 
+    .menu__list{
+        padding: 0 5px;
+        margin: 0;
+    }
+
+    .header__actived__item+.header__actived__item {
+        margin-left: 10px;
+    }
+
+    .like__counter {
+        right: 46px;
+    }
+
+    .backet__number__inner {
+        right: 11px;
+    }
+
+    .header__actived{
+        padding: 0 5px;
+    }
+   
     .header__btn {
         display: none;
-    }
-
-    .header__logo__img {
-        width: 79px;
-        height: 20px;
     }
 
     .footer__inner {
@@ -244,6 +274,19 @@
 }
 
 @media (max-width: 640px) {
+    .menu__list__item+.menu__list__item {
+        margin-left: 15px;
+    }
+
+    .header__logo__img {
+        width: 120px;
+        height: 25px;
+    }
+
+    .header__actived{
+        padding-left: 10px;
+    }
+
     .menu__button {
         background-color: transparent;
         display: block;
@@ -324,7 +367,6 @@
 
     .menu__button__black span {
         background-color: #252525;
-
     }
 
     .menu__list {
@@ -355,13 +397,15 @@
     }
 
     .basket__item__price div {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         margin-right: 0;
+    }
+    .categories__item__img{
+        width: 200px;
     }
 }
 
 @media (max-width: 550px) {
-
     .catalog__list {
         display: none;
     }
@@ -418,6 +462,14 @@
 }
 
 @media (max-width: 500px) {
+    .footer__contacts__social {
+        justify-content: center;
+    }
+
+    .categories__item__img{
+        width: 150px;
+    }
+
     .header__title {
         font-weight: 300;
         font-size: 32px;
@@ -438,12 +490,8 @@
     }
 
     .categories__item {
-        width: 165px;
+        width: 150px;
         min-height: 230px;
-    }
-
-    .categories__item__text {
-        margin-top: 240px;
     }
 
     .subscription__title {

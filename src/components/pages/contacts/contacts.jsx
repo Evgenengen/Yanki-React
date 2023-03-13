@@ -1,9 +1,9 @@
 import Footer from "../footer/Footer";
-import HeaderTop from "../headertop/HeaderTop";
 import BreadCrumbs from "./bread-crumbs/BreadCrumbs";
 import SectionContacts from "./section-contacts/SectionContacts";
 import Subscription from "./subscription/Subscription";
-import './contacts.css'
+import "./contacts.css";
+import HeaderTop from "../header-nav/headertop/HeaderTop";
 
 const Contacts = () => {
   return (

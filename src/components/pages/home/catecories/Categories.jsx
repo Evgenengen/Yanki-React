@@ -24,7 +24,7 @@ const Categories = () => {
   return sliders.map((slider) => {
     return (
       <div key={slider.id} className="categories__item">
-        <img src={slider.img} alt={slider.title} />
+        <img className='categories__item__img' src={slider.img} alt={slider.title} />
         <p className="categories__item__text">{slider.title}</p>
       </div>
     );

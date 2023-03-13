@@ -1,9 +1,9 @@
 import Footer from "../footer/Footer";
-import HeaderTop from "../headertop/HeaderTop";
 import React from "react";
 import FavoriteItem from "./favorites.item/FavoriteItem";
 import BreadCrumbs from "./bread-crumbs/BreadCrumbs";
 import './favorites.css'
+import HeaderTop from "../header-nav/headertop/HeaderTop";
 const Favorites = () => {
   return (
     <div>
